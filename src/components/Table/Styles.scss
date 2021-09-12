@@ -1,0 +1,59 @@
+.tables {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 300px;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: 'Montserrat', sans-serif;
+        @media screen and (max-width: 996px) {
+            font-size: 1.3rem;
+            
+        }
+
+    }
+    .wrap__form {
+        display: block;
+    }
+    .wrap__forms{
+        display: none;
+    }
+    .btns {
+        margin-left: auto;
+        display: block;
+        justify-self: end;
+        text-align: center;
+        align-items: center;
+        width: 200px;
+        height: 35px;
+        border-radius: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        &:hover {
+            background: rgba(255,255,255, 0.2);
+        }
+        @media screen and (max-width: 996px) {
+            width: 120px;
+            height: 30px;
+            font-size: 0.6rem;
+        }
+    }
+    .button {
+        button {
+         @media screen and (max-width: 996px) {
+              display: flex;
+              font-size: 0.5rem;
+              width: 70px;
+              height: 20px;
+              margin-top: 2px;  
+              text-align: center;
+              align-items: center;
+              justify-content: center;;
+            }
+        }
+    }
+}

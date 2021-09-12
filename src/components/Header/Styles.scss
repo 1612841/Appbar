@@ -1,0 +1,178 @@
+
+.navbars {
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    &-typo {
+        position: absolute;
+        margin-left: 60px;;
+        font-size: 1.5rem;
+        font-weight: bold;
+        @media screen and (max-width: 687px) {
+            display: none;
+        }
+    }
+    &-tabp {
+        position: absolute;
+        left: 200px;
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            @media screen and (max-width: 1300px) {
+                display: none;
+            }
+        }
+    }
+    
+    .fa-bars {
+        font-size: 40px;
+        margin-right: 20px;
+        @media screen and (max-width: 1300px) {
+            font-size: 30px;
+        }
+    }
+    .fa-cog {
+        position: absolute;
+        right: 5%;
+        font-size: 25px;
+        margin-right: 10px;
+        @media screen and (max-width: 996px) {
+            display: none;
+            
+        }
+
+    }
+    .mt-android-orange {
+        position: absolute;
+        right: 10%;
+        font-size: 0.8rem;
+        @media screen and (max-width: 996px) {
+            display: none;
+            
+        }
+    }
+    &-select {
+        select{
+            position: absolute;
+            display: none;
+            left: 350px;
+            justify-content: center;
+            align-items: center;
+    
+            @media screen and (max-width:1300px) {
+                display: none;
+            }
+        }
+    }
+    &-search {
+        position: absolute;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        margin:0 30.5%;
+        width: 35%;
+        background: rgba(255,255,255, 0.5);
+        padding:8px 30px 8px 30px;
+        border-radius: 5px;
+        .fa-search{
+            transform: rotate(90deg);
+            color: grey;
+        }
+        &-inp {
+            margin-left: 3%;
+            width: 80%;
+        }
+        button {
+            background: rgba(255,255,255, 0);
+            border: none;
+        }
+        @media screen and (max-width: 1300px) {
+            width: 30%;
+        }
+        @media screen and (max-width: 996px) {
+            width: 28%;
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            height: 25px;
+            margin: 0 24%;
+        }
+    }
+    .btns {
+        position: absolute;
+        right: 5px;
+        width: 50px;
+        height: 50px; 
+        border-radius: 50%;
+        margin-top: 7px;
+        cursor: pointer;
+        img {
+            width: 40px;
+            height: 40px; 
+            border-radius: 50%;
+        }
+    }
+    
+}
+.btns-menu {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    right: 5px;
+    z-index: 500;
+    margin-top: 67px;
+    background-color: rgba(0,0,0, 0.2);
+    border-radius: 8px;
+    transform: translateY(-100%, 0);
+    transition: all ease 0.8s;
+    ul {
+        width: 100%;
+        margin-left: -40px;
+        button{
+            width: 100%;
+            height: 50px;
+            border: none;
+            background: rgba(255,255,255, 0);
+            display: flex;
+            li {
+                list-style: none;
+                color: black;
+                font-size: 20px;
+                padding-top: 5px;
+                font-weight: bolder;
+                font-family: 'Montserrat', sans-serif;
+                @media screen and (max-width: 687px){
+                    font-size: 15px;
+                    padding-top: 0px;
+                }
+            }
+            span {
+                margin: 7px 20px 0px 50px;
+                font-size: 20px;
+                @media screen and (max-width: 687px){
+                    font-size: 15px;
+                    margin: 3px 20px 0px 20px;
+                }
+            }
+        } 
+        .btns-a:hover,
+        .btns-b:hover {
+            background: rgba(255,255,255, 0.5);
+            border-radius: 8px;
+        }
+    }
+    @media screen and (max-width: 687px) {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+    }
+}
+.dark {
+    background-color: rgb(88, 87, 85);
+    color: #fff;
+}
+.light {
+    background-color:blanchedalmond;
+    color: black;
+}
